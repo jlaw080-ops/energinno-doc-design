@@ -1,0 +1,30 @@
+/* A4 고정 페이지. 여백은 Word 기본값. */
+:root {
+  --page-size: A4;            /* 210 x 297mm */
+  --page-margin-top: 30mm;
+  --page-margin-side: 25.4mm;
+  --page-margin-bottom: 25.4mm;
+  --folio-offset: 12.7mm;     /* 페이지 하단에서 꼬리말까지 */
+  --header-gap: 8mm;          /* 머리말 아래 본문 시작까지 */
+
+  /* 블록 간격 */
+  --gap-h2-below: 16px;
+  --gap-h3-above: 20px;
+  --gap-h3-below: 8px;
+  --gap-block: 14px;          /* 표·목록 아래 */
+  --gap-figure: 18px;
+  --gap-caption: 6px;
+
+  /* 선 두께 */
+  --rule-chapter: 1.5px;
+  --rule-running: 1px;
+  --rule-cover-top: 2.5px;
+  --rule-cover-bottom: 1px;
+
+  /* 표 */
+  --table-cell-pad: 5px 7px;
+  --table-cell-pad-cover: 6px 10px;
+
+  --radius: 0;                /* 모서리 라운딩 없음 */
+  --shadow: none;             /* 그림자 없음 */
+}

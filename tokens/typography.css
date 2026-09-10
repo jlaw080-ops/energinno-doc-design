@@ -1,0 +1,28 @@
+/* 국문 상용 문서(한글·워드) 관행을 따르는 pt 기반 스케일 */
+:root {
+  --font-doc: 'Malgun Gothic', 'Apple SD Gothic Neo', 'NanumSquareNeo', sans-serif;
+
+  /* 표지 */
+  --size-cover-eyebrow: 9.5pt;  /* 자간 5pt, 낱자 띄어쓰기 */
+  --size-cover-title: 26pt;     /* weight 800, line-height 1.4 */
+  --size-cover-table: 11pt;
+
+  /* 목차 */
+  --size-toc-title: 13pt;       /* 자간 4pt */
+  --size-toc-item: 11pt;
+
+  /* 본문 */
+  --size-h2: 14pt;              /* 장 제목, weight 800 */
+  --size-h3: 11pt;              /* 절 제목(가·나·다), weight 700 */
+  --size-body: 10.5pt;          /* 본문·목록, line-height 1.7 */
+  --size-note: 10pt;            /* ※ 각주 박스 */
+  --size-table: 9.5pt;          /* 표 본문·머리행, line-height 1.5 */
+  --size-caption: 9pt;          /* 그림 캡션, 출처 */
+  --size-running: 8.5pt;        /* 머리말·꼬리말 */
+
+  --weight-strong: 800;
+  --weight-bold: 700;
+  --lh-body: 1.7;
+  --lh-table: 1.5;
+  --lh-title: 1.4;
+}

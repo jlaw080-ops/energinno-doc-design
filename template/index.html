@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>A4 문서 템플릿</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="./doc-page.js"></script>
+<style>
+  body { margin:0; font-family: var(--font-doc); }
+  doc-page:not(:defined) { visibility:hidden; }
+  a { color: var(--ink-900); text-decoration:none; }
+  a:hover { color:#000; text-decoration:underline; }
+</style>
+</head>
+<body>
+<doc-page size="a4">
+
+<!-- 표지: 머리말·꼬리말 없음. 제목 상단, 문서정보표 세로 61~76%, CI 하단 -->
+<section class="page" style="display:flex;flex-direction:column;padding:30mm 25.4mm 25.4mm 25.4mm;background:var(--surface-page);">
+  <div style="flex:none;">
+    <div style="border-top:var(--rule-cover-top) solid #333;border-bottom:var(--rule-cover-bottom) solid #333;padding:26px 0 30px 0;margin:0 0 26px 0;">
+      <div style="text-align:center;font-size:var(--size-cover-eyebrow);letter-spacing:5pt;color:var(--ink-400);margin-bottom:14px;">문 서 종 류</div>
+      <h1 style="text-align:center;font-size:var(--size-cover-title);font-weight:var(--weight-strong);color:var(--text-title);line-height:var(--lh-title);margin:0;letter-spacing:-0.3pt;">문서 제목<br>부제</h1>
+    </div>
+  </div>
+
+  <table style="width:110mm;margin-top:auto;margin-left:auto;margin-right:auto;border-collapse:collapse;">
+    <tbody>
+      <tr><th style="border:1px solid var(--line-table);background:var(--surface-fill-2);font-size:var(--size-cover-table);font-weight:var(--weight-bold);color:var(--ink-900);padding:var(--table-cell-pad-cover);text-align:center;width:30mm;">작성일</th><td style="border:1px solid var(--line-table);font-size:var(--size-cover-table);color:var(--ink-800);padding:var(--table-cell-pad-cover);">2026. 00. 00.</td></tr>
+      <tr><th style="border:1px solid var(--line-table);background:var(--surface-fill-2);font-size:var(--size-cover-table);font-weight:var(--weight-bold);color:var(--ink-900);padding:var(--table-cell-pad-cover);text-align:center;">작성</th><td style="border:1px solid var(--line-table);font-size:var(--size-cover-table);color:var(--ink-800);padding:var(--table-cell-pad-cover);">이름 / 주식회사 에너지노</td></tr>
+      <tr><th style="border:1px solid var(--line-table);background:var(--surface-fill-2);font-size:var(--size-cover-table);font-weight:var(--weight-bold);color:var(--ink-900);padding:var(--table-cell-pad-cover);text-align:center;">수신</th><td style="border:1px solid var(--line-table);font-size:var(--size-cover-table);color:var(--ink-800);padding:var(--table-cell-pad-cover);">수신처</td></tr>
+      <tr><th style="border:1px solid var(--line-table);background:var(--surface-fill-2);font-size:var(--size-cover-table);font-weight:var(--weight-bold);color:var(--ink-900);padding:var(--table-cell-pad-cover);text-align:center;">구분</th><td style="border:1px solid var(--line-table);font-size:var(--size-cover-table);color:var(--ink-800);padding:var(--table-cell-pad-cover);">협의용</td></tr>
+    </tbody>
+  </table>
+
+  <div style="flex:0 0 34mm;"></div>
+  <div style="flex:none;text-align:center;padding-bottom:6mm;"><img src="../assets/energinno-logo.png" alt="에너지노" style="display:block;width:52mm;height:auto;margin:0 auto;"></div>
+</section>
+
+<!-- 본문: 장 제목은 항상 새 면에서 시작 -->
+<section class="page" style="position:relative;padding:30mm 25.4mm 25.4mm 25.4mm;background:var(--surface-page);">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:var(--rule-running) solid var(--line-soft);padding-bottom:4px;margin-bottom:var(--header-gap);font-size:var(--size-running);color:var(--text-running);letter-spacing:0.2pt;">
+    <span>문서 제목</span>
+    <img src="../assets/energinno-logo.png" alt="에너지노" style="display:block;height:8mm;width:auto;">
+  </div>
+
+  <h2 style="font-size:var(--size-h2);font-weight:var(--weight-strong);color:var(--text-title);border-bottom:var(--rule-chapter) solid var(--line-strong);padding-bottom:6px;margin:0 0 var(--gap-h2-below) 0;">1. 장 제목</h2>
+
+  <h3 style="font-size:var(--size-h3);font-weight:var(--weight-bold);color:var(--text-title);margin:18px 0 var(--gap-h3-below) 0;">가. 절 제목</h3>
+  <ul style="list-style-type:'- ';padding-left:16px;margin:0 0 var(--gap-block) 0;font-size:var(--size-body);color:var(--text-body);line-height:var(--lh-body);">
+    <li style="margin-bottom:4px;"><strong style="color:var(--ink-900);">핵심어</strong>: 개조식 한 줄. 문장은 '~한다' 체로 끝낸다.</li>
+    <li>부연이 필요하면 하위 목록('· ')을 한 단계만 사용한다.</li>
+  </ul>
+
+  <h3 style="font-size:var(--size-h3);font-weight:var(--weight-bold);color:var(--text-title);margin:var(--gap-h3-above) 0 var(--gap-h3-below) 0;">나. 표</h3>
+  <table style="width:100%;border-collapse:collapse;margin:0 0 var(--gap-block) 0;">
+    <thead><tr>
+      <th style="border:1px solid var(--line-table);background:var(--surface-fill-2);font-size:var(--size-table);font-weight:var(--weight-bold);color:var(--ink-900);padding:var(--table-cell-pad);text-align:center;width:26mm;">구분</th>
+      <th style="border:1px solid var(--line-table);background:var(--surface-fill-2);font-size:var(--size-table);font-weight:var(--weight-bold);color:var(--ink-900);padding:var(--table-cell-pad);text-align:center;">내용</th>
+    </tr></thead>
+    <tbody>
+      <tr><td style="border:1px solid var(--line-table);font-size:var(--size-table);color:var(--ink-800);padding:var(--table-cell-pad);text-align:center;">항목</td><td style="border:1px solid var(--line-table);font-size:var(--size-table);color:var(--ink-800);padding:var(--table-cell-pad);line-height:var(--lh-table);">설명 문장</td></tr>
+    </tbody>
+  </table>
+
+  <div style="border:1px solid var(--line-table);background:var(--surface-note);padding:10px 14px;margin:var(--gap-block) 0;">
+    <div style="font-size:var(--size-note);font-weight:var(--weight-bold);color:var(--ink-900);margin-bottom:4px;">※ 전제 또는 확인 필요 사항</div>
+    <div style="font-size:var(--size-note);color:var(--ink-700);line-height:1.6;">본문에서 떼어낼 단서를 여기 담는다.</div>
+  </div>
+
+  <div style="position:absolute;left:25.4mm;right:25.4mm;bottom:12.7mm;display:flex;justify-content:center;align-items:center;border-top:var(--rule-running) solid var(--line-soft);padding-top:4px;font-size:var(--size-running);color:var(--text-folio);"><span>- 1 -</span></div>
+</section>
+
+</doc-page>
+</body>
+</html>
